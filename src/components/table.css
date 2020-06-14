@@ -1,0 +1,25 @@
+Table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid black;
+}
+
+thead {
+    height: 30px;
+    border: 2px solid black;
+    background-color: gray;
+    color: black;
+}
+
+tr,
+tbody,
+td,
+th {
+    height: 60px;
+    border: 2px solid black;
+}
+
+tbody {
+    color: red;
+    border-collapse: collapse;
+}
