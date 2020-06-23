@@ -7,8 +7,8 @@ class Vision extends Component {
           <div>
             <Accordion>
   <Card>
-    <Card.Header
-      style={{backgroundColor:"black",color:"white"}}>
+    <Card.Header className="vision">
+      
         <h4>College Vision</h4>
         
     </Card.Header>
@@ -24,8 +24,7 @@ class Vision extends Component {
 <br />
 <Accordion>
 <Card>
-  <Card.Header
-    style={{backgroundColor:"red",color:"white"}}>
+  <Card.Header className="mission">
       <h4>College Mission</h4>
     
   </Card.Header>
@@ -41,8 +40,7 @@ class Vision extends Component {
 </Card>
 
 <Card>
-  <Card.Header
-    style={{backgroundColor:"red",color:"white"}}>
+  <Card.Header className="mission">
       <h4>Anti-Ragging Committee</h4>
     </Card.Header>
   <Card.Body>
@@ -54,8 +52,6 @@ class Vision extends Component {
 <br />
 <Card className="image">
 <Image src="asserts/anti-ragging.jpg" width="600px" height="600px" img-responsive/>
-
-
 </Card>
 <br />
 <Button variant="primary" href="https://syedengg.ac.in/pdf/Anti-ragging.pdf">Read More</Button>

@@ -1,0 +1,17 @@
+.image {
+    padding-left: 200px;
+}
+
+p {
+    color: black;
+}
+
+.vision {
+    background-color: black;
+    color: white;
+}
+
+.mission {
+    background-color: red;
+    color: white;
+}

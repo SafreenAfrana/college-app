@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import './App.css';
-import Tablecontent from './components/table'
-import Vision from './components/vision.jsx';
 import { Image} from 'react-bootstrap'
-import Contact from './components/footer.jsx'
-import Logo from './components/header';
+import Tablecontent from './components/Table/table'
+import Vision from './components/Vision/vision.jsx';
+import Contact from './components/Footer/footer.jsx'
+import Logo from './components/Header/header';
 import Menu from './components/DropDowns/dropdown'
-import Info from './components/card'
+import Info from './components/Card/card'
 class App extends Component {
   render() {
     return (
@@ -17,9 +17,9 @@ class App extends Component {
         <Menu />
         <Image src="asserts/syedengg-banner.jpg" width="100%"/>
         </div>
-        
         <br />
         <Info />
+        <br />
         <Tablecontent />
         <br />
         <Vision />

@@ -23,3 +23,8 @@ tbody {
     color: red;
     border-collapse: collapse;
 }
+
+.tablehead {
+    background-color: red;
+    color: white;
+}

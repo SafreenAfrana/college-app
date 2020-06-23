@@ -4,89 +4,169 @@ import './dropdown.css'
 
 class Menu extends Component {
   render() {
-    return (
-      <Accordion style={{backgroundColor:"gray"}}>
-      <SplitButton
-              key="Home"
-              id="dropdown-split-variants-secondary"
-              variant="secondary"
-              title="Home"
-            >
-              <Dropdown.Item eventKey="1" href="aboutus-saec.php">About Us</Dropdown.Item>
-              <Dropdown.Item eventKey="2" href="#">Administration</Dropdown.Item>
-              <Dropdown.Item eventKey="3" href="syedammal-trust.php">Syed Ammal Trust</Dropdown.Item>
-              <Dropdown.Item eventKey="4" href="aboutus-secretary.php">Correspondent</Dropdown.Item>
-              <Dropdown.Item eventKey="5" href="aboutus-principal.php">Principal</Dropdown.Item>
-            </SplitButton>
-            <SplitButton
-              key="Departments"
-              id="dropdown-split-variants-secondary"
-              variant="secondary"
-              title="Departments"
-            >
-              <Dropdown.Item eventKey="1" href="https://syedengg.ac.in/pdf/Courses-Approved-Intake-2019-2020.pdf">UG</Dropdown.Item>
-              <Dropdown.Item eventKey="2" href="https://syedengg.ac.in/pdf/Courses-Approved-Intake-2019-2020.pdf">PG</Dropdown.Item>
-              
-              
-            </SplitButton>
-            <SplitButton
-              key="Students"
-              id="dropdown-split-variants-secondary"
-              variant="secondary"
-              title="Students"
-            >
-              <Dropdown.Item eventKey="1" href="conduct_students.php">Code of Conduct</Dropdown.Item>
-              <Dropdown.Item eventKey="2" href="curriculum-and-syllabus.php" >Curriculum & Syllabus</Dropdown.Item>
-              <Dropdown.Item eventKey="3" href="studymaterials.php">Study Materials</Dropdown.Item>
-              <Dropdown.Item eventKey="4" href="useful-links.php">Useful links</Dropdown.Item>
-            </SplitButton>
-            <SplitButton
-              key="Research"
-              id="dropdown-split-variants-secondary"
-              variant="secondary"
-              title="Research"
-            >
-              <Dropdown.Item eventKey="1" href="Research-Scholars.php">Scholars</Dropdown.Item>
-              <Dropdown.Item eventKey="2" href="Research-Lab.php">Lab</Dropdown.Item>
-              <Dropdown.Item eventKey="3" href="Research-Activities.php">Activities</Dropdown.Item>
-              <Dropdown.Item eventKey="4" href="Recognized-Supervisors.php">Recognized Supervisors</Dropdown.Item>
-              
-            </SplitButton>
-            <SplitButton
-              key="Placements"
-              id="dropdown-split-variants-secondary"
-              variant="secondary"
-              title="Placements"
-            >
-              <Dropdown.Item eventKey="1" href="http://syedengg.indiacareerportal.com" target="_blank">Portal</Dropdown.Item>
-              <Dropdown.Item eventKey="2" href="corporate-relationships.php">Corporate Relationships</Dropdown.Item>
-      
-              
-            </SplitButton>
-            <SplitButton
-              key="Library"
-              id="dropdown-split-variants-secondary"
-              variant="secondary"
-              title="Library"
-            >
-              <Dropdown.Item eventKey="1" href="library_details.php">Library Details</Dropdown.Item>
-              <Dropdown.Item eventKey="2" href="library_faculty.php">Faculty</Dropdown.Item>
-              
-              
-            </SplitButton>
-            <SplitButton
-              key="Alumni"
-              id="dropdown-split-variants-secondary"
-              variant="secondary"
-              title="Alumni"
-            >
-              <Dropdown.Item eventKey="1" href="http://alumni.syedengg.ac.in/aluregfrm">Alumni Registration</Dropdown.Item>
-              <Dropdown.Item eventKey="2" href="grps.php">Group Mail</Dropdown.Item>
-              
-              
-            </SplitButton>
-            </Accordion>
+      const menus = [{
+        key:"Home",
+        id:"dropdown-split-variants-secondary",
+        variant:"secondary",
+        title:"Home",
+        items:[{
+          eventkey:"1",
+          title:"About us",
+          href:"https://syedengg.ac.in/aboutus-saec.php"
+        },
+        {
+          eventkey:"2",
+          title:"Administration",
+          href:"#"
+        },
+        {
+          eventkey:"3",
+          title:"Syed Ammal Trust",
+          href:"https://syedengg.ac.in/syedammal-trust.php"
+        },
+        {
+          eventkey:"4",
+          title:"Correspondent",
+          href:"https://syedengg.ac.in/aboutus-secretary.php"
+        },
+        {
+          eventkey:"5",
+          title:"Principal",
+          href:"https://syedengg.ac.in/aboutus-principal.php"
+        }],
+      },
+      {
+      key:"Departments",
+      id:"dropdown-split-variants-secondary",
+      variant:"secondary",
+      title:"Departments",
+      items:[{
+        eventkey:"1",
+        title:"UG",
+        href:"https://syedengg.ac.in/pdf/Courses-Approved-Intake-2019-2020.pdf"
+      },
+      {
+        eventkey:"2",
+        title:"PG",
+        href:"https://syedengg.ac.in/pdf/Courses-Approved-Intake-2019-2020.pdf"
+      }]
+    },
+      {
+        key:"Students",
+        id:"dropdown-split-variants-secondary",
+        variant:"secondary",
+        title:"Students",
+        items:[{
+          eventkey:"1",
+          title:"Code of Conduct",
+          href:"https://syedengg.ac.in/conduct_students.php"
+        },
+        {
+          eventkey:"2",
+          title:"Curriculum & Syllabus",
+          href:"https://syedengg.ac.in/curriculum-and-syllabus.php"
+        },
+        {
+          eventkey:"3",
+          title:"Study Materials",
+          href:"https://syedengg.ac.in/studymaterials.php"
+        },
+        {
+          eventkey:"4",
+          title:"Useful links",
+          href:"https://syedengg.ac.in/useful-links.php"
+        }],
+      },
+      {
+        key:"Research",
+        id:"dropdown-split-variants-secondary",
+        variant:"secondary",
+        title:"Research",
+        items:[{
+          eventkey:"1",
+          title:"Scholars",
+          href:"https://syedengg.ac.in/Research-Scholars.php"
+        },
+        {
+          eventkey:"2",
+          title:"Lab",
+          href:"https://syedengg.ac.in/Research-Lab.php"
+        },
+        {
+          eventkey:"3",
+          title:"Activities",
+          href:"https://syedengg.ac.in/Research-Activities.php"
+        },
+        {
+          eventkey:"4",
+          title:"Recognized Supervisors",
+          href:"https://syedengg.ac.in/Recognized-Supervisors.php"
+        }],
+      },
+      {
+        key:"Placements",
+        id:"dropdown-split-variants-secondary",
+        variant:"secondary",
+        title:"Placements",
+        items:[{
+          eventkey:"1",
+          title:"Portal",
+          href:"https://syedengg.indiacareerportal.com"
+        },
+        {
+          eventkey:"2",
+          title:"Corporate Relationships",
+          href:"https://syedengg.ac.in/corporate-relationships.php"
+        }]
+      },{
+        key:"Library",
+        id:"dropdown-split-variants-secondary",
+        variant:"secondary",
+        title:"Library",
+        items:[{
+          eventkey:"1",
+          title:"Library Details",
+          href:"https://syedengg.ac.in/library_details.php"
+        },
+        {
+          eventkey:"2",
+          title:"Faculty",
+          href:"https://syedengg.ac.in/library_faculty.php"
+        }]
+      },{
+        key:"Alumni",
+        id:"dropdown-split-variants-secondary",
+        variant:"secondary",
+        title:"Alumni",
+        items:[{
+          eventkey:"1",
+          title:"Alumni Registration",
+          href:"https://alumni.syedengg.ac.in/aluregfrm"
+        },
+        {
+          eventkey:"2",
+          title:"Group Mail",
+          href:"https://syedengg.ac.in/grps.php"
+        }]
+      }
+      ]
     
+    return (
+    <Accordion className="dropdown">
+        {menus.map(menu => {
+          return(
+            <SplitButton  key={menu.key} id={menu.id} variant={menu.variant} title={menu.title}>
+          {menu.items.map(item =>{
+          return(
+          <Dropdown.Item eventkey={item.eventKey}  href={item.href}>
+                {item.title}
+          </Dropdown.Item> 
+            )
+            })}
+            </SplitButton>
+          )
+        })}
+      </Accordion>
     );
   }
 }

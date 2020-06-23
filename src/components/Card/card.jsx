@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Card,CardGroup,Button, Accordion } from 'react-bootstrap'
+import './card.css'
 class Info extends Component {
   render() {
     return (
@@ -8,9 +9,9 @@ class Info extends Component {
         <Card>
           <Card.Img variant="top" src="asserts/5.jpg" height="250px" />
           <Card.Body>
-            <Card.Title style={{color:"black"}}>Welcome<br />
-                <span style={{color:"red"}}>Syed Ammal Engineering College</span></Card.Title>
-            <Card.Text style={{color:"black"}}>
+            <Card.Title className="cardtitle">Welcome<br />
+                <span className="title">Syed Ammal Engineering College</span></Card.Title>
+            <Card.Text className="cardtext">
             Syed Ammal Engineering college , Ramanathapuram a Self-Financing Institution, is one among the several
                 educational institutions founded by Late. Dr. E.M.Abdullah.
             </Card.Text>
@@ -22,9 +23,9 @@ class Info extends Component {
         <Card>
           <Card.Img variant="top" src="asserts/secretary.jpg" height="250px" />
           <Card.Body>
-            <Card.Title style={{color:"black"}}>Correspondent<br />
-            <span style={{color:"red"}}>Rtn.Dr.Chinnadurai Abdullah</span></Card.Title>
-            <Card.Text style={{color:"black"}}>
+            <Card.Title className="cardtitle">Correspondent<br />
+            <span className="title">Rtn.Dr.Chinnadurai Abdullah</span></Card.Title>
+            <Card.Text className="cardtext">
             Rtn.Dr.Chinnadurai Abdullah, Correspondent of the institution and Syed Ammal Trust. Being a Radiologist,
             he has a lot of ambitions to bring about landmark developments........
             </Card.Text>
@@ -36,9 +37,9 @@ class Info extends Component {
         <Card>
           <Card.Img variant="top" src="asserts/principal.jpg" height="250px" />
           <Card.Body>
-            <Card.Title style={{color:"black"}}>Principal<br />
-            <span style={{color:"red"}}>Dr. M. PERIYASAMY M.E., Ph.D.,<br /> MISTE, AMIETE, MIEEE</span></Card.Title>
-            <Card.Text style={{color:"black"}}>
+            <Card.Title className="cardtitle">Principal<br />
+            <span className="title">Dr. M. PERIYASAMY M.E., Ph.D.,<br /> MISTE, AMIETE, MIEEE</span></Card.Title>
+            <Card.Text className="cardtext">
             Dr. M. PERIYASAMY M.E., Ph.D., MISTE, AMIETE, MIEEE., obtained his
              Bachelor’s degree in Electronics and Communication Engineering from 
              Alagappa Chettiar College of Engineering and Technology .......
