@@ -32,15 +32,15 @@ export class Tablecontent extends Component {
     return (
       <div>
         <Card>
-          <Card.Header className="tablehead">
+          <Card.Header className="tableheading">
             <h4>Courses Offered</h4>
           </Card.Header>
-          <br />
+        
         </Card>
-
-        <Table striped bordered hover>
-          <thead>
-            <tr>
+        <br />
+        <table className="table table-hover table-striped table-light">
+          <thead className="table-dark">
+            <tr class="tablehead">
               {courses.map((course) => {
                 return <th>{course.degree}</th>;
               })}
@@ -54,7 +54,7 @@ export class Tablecontent extends Component {
               })}
             </tr>
 
-            <tr rowSpan="2" style={{ color: "blue" }}>
+            <tr rowSpan="2">
               {courses.map((course) => {
                 return <td>{course.dept2}</td>;
               })}
@@ -64,7 +64,7 @@ export class Tablecontent extends Component {
                 return <td>{course.dept3}</td>;
               })}
             </tr>
-            <tr rowSpan="3" style={{ color: "blue" }}>
+            <tr rowSpan="3">
               {courses.map((course) => {
                 return <td>{course.dept4}</td>;
               })}
@@ -75,7 +75,7 @@ export class Tablecontent extends Component {
               })}
             </tr>
           </tbody>
-        </Table>
+        </table>
       </div>
     );
   }
