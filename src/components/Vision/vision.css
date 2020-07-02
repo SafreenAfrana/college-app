@@ -7,11 +7,16 @@ p {
 }
 
 .vision {
-    background-color: black;
-    color: white;
+    background-color: thistle;
+    color: black;
 }
 
 .mission {
-    background-color: red;
-    color: white;
+    background-color: lightcoral;
+    color: black;
+}
+
+.anti-ragging {
+    background-color: thistle;
+    color: black;
 }

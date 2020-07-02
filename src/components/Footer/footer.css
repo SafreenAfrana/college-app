@@ -4,6 +4,10 @@
     color: white;
 }
 
+Navbar {
+    background-color: #303838;
+}
+
 .links {
     margin: 30px;
 }
@@ -15,7 +19,7 @@ p {
 }
 
 .id {
-    padding-left: 200px;
+    padding-left: 120px;
 }
 
 .logo {

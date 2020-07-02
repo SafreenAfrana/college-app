@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-import { Dropdown, SplitButton, Accordion } from "react-bootstrap";
+import {  Navbar,Nav,NavDropdown } from "react-bootstrap";
 import "./dropdown.css";
 
 const menus = [
   {
     key: "Home",
-    id: "dropdown-split-variants-secondary",
-    variant: "secondary",
     title: "Home",
     items: [
       {
@@ -38,28 +36,22 @@ const menus = [
   },
   {
     key: "Departments",
-    id: "dropdown-split-variants-secondary",
-    variant: "secondary",
     title: "Departments",
     items: [
       {
         eventkey: "1",
         title: "UG",
-        href:
-          "https://syedengg.ac.in/pdf/Courses-Approved-Intake-2019-2020.pdf",
+        href: "https://syedengg.ac.in/pdf/Courses-Approved-Intake-2019-2020.pdf",
       },
       {
         eventkey: "2",
         title: "PG",
-        href:
-          "https://syedengg.ac.in/pdf/Courses-Approved-Intake-2019-2020.pdf",
+        href: "https://syedengg.ac.in/pdf/Courses-Approved-Intake-2019-2020.pdf",
       },
     ],
   },
   {
     key: "Students",
-    id: "dropdown-split-variants-secondary",
-    variant: "secondary",
     title: "Students",
     items: [
       {
@@ -86,8 +78,6 @@ const menus = [
   },
   {
     key: "Research",
-    id: "dropdown-split-variants-secondary",
-    variant: "secondary",
     title: "Research",
     items: [
       {
@@ -114,8 +104,6 @@ const menus = [
   },
   {
     key: "Placements",
-    id: "dropdown-split-variants-secondary",
-    variant: "secondary",
     title: "Placements",
     items: [
       {
@@ -132,8 +120,6 @@ const menus = [
   },
   {
     key: "Library",
-    id: "dropdown-split-variants-secondary",
-    variant: "secondary",
     title: "Library",
     items: [
       {
@@ -150,8 +136,6 @@ const menus = [
   },
   {
     key: "Alumni",
-    id: "dropdown-split-variants-secondary",
-    variant: "secondary",
     title: "Alumni",
     items: [
       {
@@ -171,30 +155,36 @@ const menus = [
 class Menu extends Component {
   dropDown(item) {
     return (
-      <Dropdown.Item eventkey={item.eventKey} href={item.href}>
+      <NavDropdown.Item eventkey={item.eventKey} href={item.href}>
         {item.title}
-      </Dropdown.Item>
+      </NavDropdown.Item>
     );
   }
 
   render() {
     return (
-      <Accordion className="dropdown">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="mr-auto">
         {menus.map((menu) => {
           return (
-            <SplitButton
+            <NavDropdown
+              
               key={menu.key}
-              id={menu.id}
-              variant={menu.variant}
+              id="collasible-nav-dropdown"
               title={menu.title}
             >
               {menu.items.map((item) => {
                 return this.dropDown(item);
               })}
-            </SplitButton>
+            </NavDropdown>
+
           );
         })}
-      </Accordion>
+              </Nav>
+           </Navbar.Collapse>
+       </Navbar>
     );
   }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, Accordion, Image } from "react-bootstrap";
+import { Card, Accordion, Image , Nav,Navbar } from "react-bootstrap";
 import "./footer.css";
 class Contact extends Component {
   render() {
@@ -51,22 +51,29 @@ class Contact extends Component {
     ];
     return (
       <Accordion>
-        <Card className="footer">
-          <p>
+      <Card className="footer">
+        <Navbar collapseOnSelect expand="lg"  variant="dark">
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="mr-auto">
+                
             {links.map((l) => {
               return (
-                <>
-                  <a href={l.href}> {l.name} </a>
-                  <span class="fpad">| </span>
-                </>
+                
+                  <Nav.Link href={l.href}>{l.name}
+                  <span class="fpad">   |</span>
+                  </Nav.Link>
               );
             })}
-          </p>
+            </Nav>
+            </Navbar.Collapse>
+          </Navbar>
           <p>
             Copyright © 2011 - 2020. All Rights Reserved. Syed Ammal Engineering
             College.
-            <span className="id">Designed & Maintained by : </span>
+            <span className="id">Designed & Maintained by: </span>
           </p>
+          
           <p>
             <a href="http://www.syedengg.ac.in/">www.syedengg.ac.in</a>
             <span className="logo">
