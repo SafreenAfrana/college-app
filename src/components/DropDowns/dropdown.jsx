@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import {  Navbar,Nav,NavDropdown } from "react-bootstrap";
-import "./dropdown.css";
+
 
 const menus = [
   {
-    key: "Home",
     title: "Home",
     items: [
       {
@@ -35,7 +34,6 @@ const menus = [
     ],
   },
   {
-    key: "Departments",
     title: "Departments",
     items: [
       {
@@ -51,7 +49,6 @@ const menus = [
     ],
   },
   {
-    key: "Students",
     title: "Students",
     items: [
       {
@@ -77,7 +74,6 @@ const menus = [
     ],
   },
   {
-    key: "Research",
     title: "Research",
     items: [
       {
@@ -103,7 +99,6 @@ const menus = [
     ],
   },
   {
-    key: "Placements",
     title: "Placements",
     items: [
       {
@@ -119,7 +114,6 @@ const menus = [
     ],
   },
   {
-    key: "Library",
     title: "Library",
     items: [
       {
@@ -135,7 +129,6 @@ const menus = [
     ],
   },
   {
-    key: "Alumni",
     title: "Alumni",
     items: [
       {
@@ -163,6 +156,8 @@ class Menu extends Component {
 
   render() {
     return (
+
+      
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
@@ -171,7 +166,7 @@ class Menu extends Component {
           return (
             <NavDropdown
               
-              key={menu.key}
+              key={menu.title}
               id="collasible-nav-dropdown"
               title={menu.title}
             >
@@ -182,9 +177,11 @@ class Menu extends Component {
 
           );
         })}
-              </Nav>
-           </Navbar.Collapse>
-       </Navbar>
+        
+        </Nav>
+        </Navbar.Collapse>
+        
+      </Navbar>
     );
   }
 }
