@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './App.css';
-import { Image} from 'react-bootstrap'
 import Tablecontent from './components/Table/table'
 import Vision from './components/Vision/vision.jsx';
 import Contact from './components/Footer/footer.jsx'
@@ -15,7 +14,10 @@ class App extends Component {
         <Logo />
         <br />
         <Menu />
-        <Image src="asserts/syedengg-banner.jpg" width="100%"/>
+        <br />
+        <a href="asserts/syedengg-banner.jpg">
+        <img src="asserts/syedengg-banner.jpg" alt="college" width="100%"/>
+        </a>
         </div>
         <br />
         <Info />
