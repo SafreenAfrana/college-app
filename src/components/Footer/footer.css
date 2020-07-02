@@ -25,3 +25,9 @@ p {
 .logo {
     padding-left: 670px;
 }
+
+@media screen and (max-width: 600px) {
+    div.footer {
+        display: none;
+    }
+}
