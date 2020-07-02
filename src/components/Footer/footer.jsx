@@ -77,7 +77,9 @@ class Contact extends Component {
           <p>
             <a href="http://www.syedengg.ac.in/">www.syedengg.ac.in</a>
             <span className="logo">
+              <a href="asserts/images.png">
               <Image src="asserts/images.png" alt="image" />
+              </a>
             </span>
           </p>
         </Card>

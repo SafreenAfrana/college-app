@@ -4,15 +4,14 @@ import './header.css'
 class Logo extends Component {
   render() {
     return (
-        <Accordion>
+      <Accordion>
         <Card className="header">
-        <img src="asserts/syedengg-logo.png" alt="logo" />
-      </Card>
-      
+          <a href="asserts/syedengg-logo.png">
+        <img src="asserts/syedengg-logo.png"  alt="logo" />
+        </a>
+        </Card>
       </Accordion>
-      
-      
-    );
+      );
   }
 }
 
